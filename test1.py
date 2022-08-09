@@ -1,13 +1,14 @@
-class Person:
+from utill1 import person2
 
-    def __init__(self,name,surname,emailid,year_of_birth):
-        self.name1 = name
-        self.surname = surname
-        self.emailid = emailid
-        self.year_of_birth = year_of_birth
+obj = person2("himanshu " , "balodi" , 345345)
+print(obj.yob1)
 
-anuj_var = Person("himu" ,"balodi" , "himu@gmail.com" ,1995)
-himanshu = Person("himanshu" ,"kumar","himanshu@gmail.com",4545)
-print(anuj_var.name1)
-print(himanshu.name1)
-print(type(himanshu))
+class person1 :
+    def __init__(self , name ,surname , yob):
+        self._name1 = name
+        self.__surname1 = surname
+        self.yob1 = yob
+
+himu = person1("himanshu" , "balodi" , 1990)
+print(himu._name1)
+print(himu._person1__surname1)
